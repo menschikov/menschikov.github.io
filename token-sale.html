@@ -1,0 +1,214 @@
+---
+layout: default
+autonomous: A Distributed Autonomous Organization
+---
+
+<div class="token-page not-yet">
+    <div class="site-wrapper">
+    <section class="wt-lif " id="top">
+        <div class="token-page__nav">
+            <div class="wrapper wrapper">
+            {% include nav.html %}
+            </div>
+        </div>
+        <div class="page-section page-section--thick bg-pale-green">
+        <div class="wrapper wrapper--narrow">
+            <div class="wt-token row row--gutters row--snug">
+                <div class="wt-token__lhs row__medium6">
+                    <div class="wt-token__graphic">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/207435/wt-lif-token.svg">
+                    </div>
+                </div>
+                <div class="wt-token__rhs row__medium6">
+                    <div class="wt-token__graphic">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/207435/wt-lif-token.svg">
+                    </div>
+                    <div class="wt-token__description">
+                        <p>The Líf token facilitates transactions on the Winding Tree platform.</p>
+                        <p>Líf enables participation in platform governance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="wt-event-countdown page-section page-section--thick" id="tge">
+        <div class="wrapper">
+            <h1 class="title title--medium">Token Generation Event</h1>
+            <div class="wt-event-countdown__timer">
+                <div class="wt-event-countdown__countdown">00d : 00h : 00m : 00s</div>
+                <div class="wt-event-countdown__until-begins">until the sale begins</div>
+                <div class="wt-event-countdown__until-ends">until the end of sale</div>
+            </div>
+            <div class="wt-event-countdown__when">
+                <div class="wt-event-countdown__when-starts">
+                    <div class="mb10">February 1, 2018 (8AM UTC)</div>
+                </div>
+                <div class="wt-event-countdown__when-ends">
+                    <div class="mb10">February 15, 2018 (8AM UTC)</div>
+                    <div class="wt-event-countdown__when-ends-subtitle">End Date</div>
+                </div>
+            </div>
+                <script>
+            var countDownDate = new Date("2018-02-01T08:00:00+00:00").getTime();
+
+            function refreshCountdown() {
+              var now = new Date().getTime();
+
+              var distance = countDownDate - now;
+
+              var days = ''+Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = ''+Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = ''+Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = ''+Math.floor((distance % (1000 * 60)) / 1000);
+
+                if (days.length < 2) {
+                    days = "0" + days;
+                }
+                if (hours.length < 2) {
+                    hours = "0" + hours;
+                }
+                if (minutes.length < 2) {
+                    minutes = "0" + minutes;
+                }
+                if (seconds.length < 2) {
+                    seconds = "0" + seconds;
+                }
+              document.querySelector('.wt-event-countdown__countdown').innerHTML = days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s";
+
+              if (distance < 0) {
+                clearInterval(x);
+                document.querySelector('.wt-event-countdown__countdown').innerHTML = '00d : 00h : 00m : 00s';
+              }
+            }
+            var x = setInterval(refreshCountdown, 1000);
+            refreshCountdown();
+            </script>
+            <form class="wt-event-countdown__keep-me-updated" action="//windingtree.us14.list-manage.com/subscribe/post?u=93dec359c99b9871f7330768c&id=2f41b0318a" method="post">
+                <input type="submit" value="Keep me updated" class="btn btn--keep-updated">
+            </form>
+        </div>
+    </section>
+    <section class=" wt-event-contribution page-section page-section--thick">
+        <div class="blur">
+        <div class="wrapper wrapper--narrow">
+            <div class="wt-event-contribution__progress mb50">
+                <div class="wt-event-contribution__progress-bar"><span>000 ETH</span></div>
+            </div>
+            <div class="wt-event-contribution__status row pb50">
+                <div class="wt-event-contribution__status-cell row__medium6">
+                    <div class="wt-event-contribution__status-divider"></div>
+                    <div class="wt-event-contribution__status-blob mcenter">
+                        <div class="wt-event-contribution__status-title">0000</div>
+                        <div class="wt-event-contribution__status-subtitle">ETH Raised</div>
+                    </div>
+                </div>
+                <div class="wt-event-contribution__status-cell row__medium6">
+                    <div class="wt-event-contribution__status-blob mcenter">
+                        <div class="wt-event-contribution__status-title">0000</div>
+                        <div class="wt-event-contribution__status-subtitle">Líf Generated</div>
+                    </div>
+                </div>
+            </div>
+            <div class=" wt-event-contribution__smart-contract">
+                <div class="wt-event-contribution__smart-contract-title text--caps mb30">Our Official Smart Contract Address</div>
+                <div>
+                    <div class="wt-event-contribution__smart-contract-address mb20">0x0000000000000000000000000000000000000</div>
+                    <div class="wt-event-contribution__smart-contract-address-not-yet mb20">Revealed February&nbsp;1,&nbsp;2018</div>
+                </div>
+                <div class="wt-event-contribution__smart-contract-mew">
+                    <p>Send payment to our official smart contract address above.<br>
+                    We recommend using <a href="https://www.myetherwallet.com/" target="_blank" rel="noopener">My Ether Wallet</a>. Do NOT send ETH from an exchange!</p>
+                    <a class="btn btn--my-ether-wallet" href="https://www.myetherwallet.com/" target="_blank" rel="noopener">MyEtherWallet</a>
+                </div>
+            </div>
+        </div>
+        <div class="darken"></div>
+        </div>
+        <div class="locked text--caps">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/207435/wt-tge-lock.svg">
+            <p>LOCKED UNTIL FEBRUARY 1st</p>
+        </div>
+    </section>
+    <section class="page-section page-section--thick wt-event-contribution__info">
+        <div class="wrapper wrapper-narrow">
+            <div class="row row--gutters row--medium-no-gutters text--center text--left-large mcenter justify-center">
+                <div class="wt-event-contribution__info-row row__large4 mb50">
+                    <hr class="divider divider--left mcenter mleft--large">
+                    <div class="wt-event-contribution__info-title mb20">Pricing</div>
+                    <div class="wt-event-contribution__info-description">
+                        <p class="text--caps">1000&ndash;900 Líf/Eth</p>
+                        <p>The fundraiser will be uncapped for two weeks, allowing for more fair and equal distribution.</p>
+                        <p>Líf price will rise after the first week.</p>
+                    </div>
+                </div>
+                <div class="wt-event-contribution__info-row row__large4 mb50">
+                    <hr class="divider divider--left mcenter mleft--large">
+                    <div class="wt-event-contribution__info-title mb20">Token Distribution</div>
+                    <div class="wt-event-contribution__info-description">
+                        <p>Líf will be distributed over the course of 7 days after the end of the fundraiser.</p>
+                        <p>The number of tokens generated will be decided by the market.</p>
+                        <p>The excess of funds (>$10M) will be put into a Market Validation Mechanism (MVM) that will allow TGE participants to withdraw a part of their contribution any time by sending their lífs to the MVM.</p>
+                    </div>
+                </div>
+                <div class="wt-event-contribution__info-row row__large4 mb0">
+                    <div class="wt-event-contribution__info-pie-container">
+                        <img class="wt-event-contribution__info-pie mb30" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/207435/wt-token-pie-chart.svg">
+                    </div>
+                    <div class="wt-event-contribution__info-title mb20 text--capitalize">Distribution Breakdown</div>
+                    <ul class="wt-event-contribution__info-list text--left">
+                        <li>75% to the public sale</li>
+                        <li>20% to founders, advisors, employee pool, etc.</li>
+                        <li>5% to long-term foundation budget</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wt-wallet page-section page-section--thick pt100">
+        <div class="wrapper wrapper--narrow">
+            <div class="row row--gutters row--small-no-gutters">
+                <div class="wt-wallet__lhs row__medium4">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/207435/wt-wallet.svg">
+                </div>
+                <div class="wt-wallet__rhs row__medium8">
+                    <h2 class="wt-wallet__subtitle">“My ETH is on my Coinbase, Bittrex, Kraken, etc account. What should I do?”</h2>
+                    <p class="wt-wallet__description">ETH must be sent from a wallet which YOU own the private keys. If you are unfamiliar with how to do this, we recommend MyEtherWallet. If you chose to use this wallet, please bookmark it and always use that bookmark in the future. There have been numerous attempts to fake web-wallets by sending users to similarly-spelled domains, only to be robbed of their tokens.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" wt-powered page-section page-section--thick">
+        <div class="wrapper wrapper--narrow">
+            <hr class="divider divider--wide mb30">
+            <h2 class="wt-powered__title title title--medium mb50">Powered By Líf</h2>
+            <div class="row">
+                <div class="wt-powered__lhs row__medium6">
+                    <h2 class="wt-powered__subtitle">Payments On The Platform</h2>
+                    <p class="wt-powered__description">Líf is used for payments. In order for an agency (offline or online) to book anything on the Winding Tree platform, they will have to send a certain amount of Líf to the seller.</p>
+                </div>
+                <div class="wt-powered__rhs row__medium6">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/207435/wt-sendlif.svg">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="wt-governance page-section page-section--thick pb100">
+        <div class="wrapper wrapper--narrow">
+            <div class="row">
+                <div class="wt-governance__lhs row__medium6">
+                    <h2 class="wt-governance__subtitle">Platform Governance</h2>
+                    <p class="wt-governance__description">Winding tree is open-source and anyone can propose a change to the platform code, whether that’s an update to a smart contract or new business logic. In the decentralized marketplace, Líf participants have the power to approve that change.</p>
+                </div>
+                <div class="wt-governance__rhs row__medium6">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/207435/wt-governance.svg">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="125px" height="320px" viewBox="0 0 125 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>leaves_left</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="75.5851865%" x2="84.5849634%" y2="-7.33604901%" id="linearGradient-1">
+            <stop stop-color="#9CEDD8" offset="0%"></stop>
+            <stop stop-color="#63D5B0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#9CEDD8" offset="0%"></stop>
+            <stop stop-color="#63D5B0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WTLanding_softlaunch_vAug6" transform="translate(-57.000000, -5521.000000)">
+            <g id="leaves_left" transform="translate(0.000000, 5441.000000)">
+                <path d="M163.786874,203.391982 L148.042293,203.391982 L148.042293,187.652381 C148.042293,179.045862 155.044865,172.043289 163.651385,172.043289 L179.391982,172.043289 L179.391982,187.786874 C179.391982,196.391401 172.391401,203.391982 163.786874,203.391982 L163.786874,203.391982 Z M163.651385,170 C153.919114,170 146,177.919114 146,187.652381 L146,400 L148.042293,400 L148.042293,205.43527 L163.786874,205.43527 C173.517153,205.43527 181.433278,197.518149 181.433278,187.786874 L181.433278,170 L163.651385,170 Z" id="Fill-1" fill="url(#linearGradient-1)"></path>
+                <path d="M74.8613678,113.531832 L59.050846,113.531832 L59.050846,97.7263121 C59.050846,89.083747 66.0827466,82.0518464 74.7253117,82.0518464 L90.5318319,82.0518464 L90.5318319,97.8613678 C90.5318319,106.501932 83.501932,113.531832 74.8613678,113.531832 L74.8613678,113.531832 Z M74.7253117,80 C64.9522803,80 57,87.9522803 57,97.7263121 L57,400 L59.050846,400 L59.050846,115.583678 L74.8613678,115.583678 C84.6323984,115.583678 92.5816774,107.633399 92.5816774,97.8613678 L92.5816774,80 L74.7253117,80 Z" id="Fill-1-Copy" fill="url(#linearGradient-2)" transform="translate(74.790839, 240.000000) scale(-1, 1) translate(-74.790839, -240.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
