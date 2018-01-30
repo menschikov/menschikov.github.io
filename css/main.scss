@@ -89,7 +89,7 @@ html,
   // overflow-x: hidden;
 }
 
-h1 {
+h2 {
   font-weight: $fw-semi-bold !important;
 }
 
@@ -806,7 +806,7 @@ $x-small-gutter: 20px;
         @include at-medium {
           line-height: 46px;
 
-          h1 {
+          h2 {
             font-size: 36px;
           }
         }
@@ -1115,7 +1115,7 @@ $x-small-gutter: 20px;
 .wt-join {
   text-align: center;
 
-  h1 {
+  h2 {
     margin: 0 0 20px;
   }
 
@@ -1211,7 +1211,7 @@ $x-small-gutter: 20px;
 .wt-connect {
   text-align: center;
 
-  h1 {
+  h2 {
     margin: 0 0 20px;
   }
 
