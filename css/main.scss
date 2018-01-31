@@ -373,6 +373,10 @@ $divider-size: 3px;
   }
 }
 
+.btn--lif-token {
+  margin-top: 30px;
+}
+
 .btn--keep-updated {
   display: inline-block;
   width: 266px;
@@ -956,6 +960,8 @@ $x-small-gutter: 20px;
   &__rhs {
     h3 {
       font-weight: $fw-semi-bold;
+      font-size: 1.5em;
+      line-height: 1.5em;
     }
 
     p {
@@ -1088,7 +1094,7 @@ $x-small-gutter: 20px;
 
   &__tile {
     width: 100%;
-    margin: 0 0 20px;
+    margin: 0 0 40px;
 
     img {
       width: 100%;
@@ -1679,20 +1685,29 @@ $x-small-gutter: 20px;
     color: #fff;
     font-weight: $fw-light;
     margin: 0 0 10px 0;
+    font-size: 24px;
+
+    .boldtext {
+      font-weight: 600;
+    }
 
     @include at-small {
       padding: 5px 10px;
       font-size: 17px;
       line-height: 21px;
-      font-weight: $fw-semi-bold;
+      //font-weight: $fw-semi-bold;
     }
   }
 
   &__description {
-    font-size: $fz-body;
+    font-size: 20px;
     line-height: $lh-body;
     margin: 0 0 20px;
+    @include at-small {
+      font-size: 16px;
+    }
   }
+
 }
 
 // TOKEN PAGE
@@ -3957,6 +3972,20 @@ label {
     padding-bottom: 0;
   }
 
+  .video-title {
+
+    position: absolute;
+    bottom: 10px;
+    padding: 6px 10px;
+
+    font-weight: 400;
+    background: #222;
+    //text-transform: uppercase;
+    //background: #7dfed3;
+    color: $color-white;
+    font-size: 16px;
+  }
+
   &__title {
     margin-bottom: 20px;
 
@@ -4044,8 +4073,8 @@ label {
     }
 
     img {
-      width: 205px;
-      height: 115px;
+      width: 240px;
+      //height: 115px;
       display: block;
     }
   }

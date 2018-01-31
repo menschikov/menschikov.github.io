@@ -91,32 +91,41 @@ var videoList = [
     {
         url: 'https://www.youtube.com/embed/cn94v3ZngJg',
         thumbnail: 'https://i3.ytimg.com/vi/cn94v3ZngJg/maxresdefault.jpg',
+        title:'Blockchain Summit Barcelona',
     },
     {
         url: 'https://www.youtube.com/embed/x4qCt3wh98U',
         thumbnail: 'https://i3.ytimg.com/vi/x4qCt3wh98U/maxresdefault.jpg',
+        title:'Token Generation Event',
     },
     {
         url: 'https://www.youtube.com/embed/881woCQN2Lo',
         thumbnail: 'https://i3.ytimg.com/vi/881woCQN2Lo/maxresdefault.jpg',
+        title:'Winding Tree Update',
     },
     {
         url: 'https://www.youtube.com/embed/ns7VVrARIrM',
         thumbnail: 'https://i3.ytimg.com/vi/ns7VVrARIrM/maxresdefault.jpg',
+        title:'Meet CTO Jakub Vysoky',
     },
 ];
 
 var $videoThumbnailList = $('.wt-videos__thumbnail-list');
+
 if ($videoThumbnailList.length) {
     var currentVideoIndex = 0;
 
     function populateVideos() {
+
         videoList.forEach(function(video, index) {
-            var $li = $('<li data-index="' + index + '"><img src="' + video.thumbnail + '"</li>');
+            var $li = $('<li data-index="' + index + '"><img src="' + video.thumbnail + '"><div class="video-title">'+ video.title +'</div></li>');
             $videoThumbnailList.append($li);
         });
+
         var $active = $('.wt-videos__active');
+
         $active.attr('src', videoList[0].url);
+
         $videoThumbnailList.find('li').eq(0).addClass('active');
 
         $videoThumbnailList.find('li').click(function() {
@@ -126,7 +135,7 @@ if ($videoThumbnailList.length) {
                 $active.attr('src', videoList[index].url);
                 $(this).addClass('active').siblings().removeClass('active');
             }
-        })
+        });
     }
 
     $videoThumbnailList.on('mousedown', function() {
