@@ -1,489 +1,498 @@
----
+--- 
 layout: default
 ---
 
 <div class="site-wrapper">
-  <section class="wt-diorama" id="top">
-    <img class="wt-diorama__bg" src="images/bg/wt-headergraphic.png" alt="Background">
-    <div class="wt-diorama__gradient"></div>
-    <div class="wrapper">
-      {% include nav.html %}
-      <div class="wt-diorama__bottom">
-        <a href="/token-sale.html#tge" class="wt-diorama__bottom-nav-token-sale link btn btn--token-sale">Join Token Sale</a>
-        <div class="wt-diorama__summary">
-          <div>Decentralized travel distribution</div><br>
-          <div>Making travel cheaper for consumers and more profitable for suppliers</div>
+
+    <section class="wt-diorama" id="top">
+
+        <img class="wt-diorama__bg" src="images/bg/wt-headergraphic.png" alt="Background">
+
+        <div class="wt-diorama__gradient"></div>
+
+        <div class="wrapper">
+
+            {% include nav.html %}
+
+            <div class="wt-diorama__bottom">
+
+
+                <div class="wt-diorama__summary">
+
+                    <div><h1>Decentralized travel distribution</h1></div>
+
+                    <div>Making travel cheaper for consumers and more profitable for suppliers</div>
+
+                    <div class="stick-bottom"><a href="/token-sale.html#tge" class="wt-diorama__bottom-nav-token-sale link btn btn--token-sale btn--colored-reverse">Join Token Sale</a></div>
+
+                </div>
+
+                <ul class="wt-diorama__social social">
+                    <li><a href="https://github.com/windingtree"><img src="images/social/wt-social-github.svg" alt="Github"></a></li>
+
+                    <li><a href="https://t.me/windingtree"><img src="images/social/wt-social-telegram.svg" alt="Telegram"></a></li>
+
+                    <li><a href="https://windingtree.rocket.chat/"><img src="images/social/wt-social-rocketchat.svg" alt="Rocket.Chat"></a></li>
+
+                    <li><a href="https://reddit.com/r/windingtree"><img src="images/social/wt-social-reddit.svg" alt="Reddit"></a></li>
+
+                    <li><a href="https://bitcointalk.org/index.php?topic=1946065"><img src="images/social/wt-social-bitcoin.svg" alt="BitcoinTalk"></a></li>
+
+                    <li><a href="https://twitter.com/windingtree"><img src="images/social/wt-social-twitter.svg" alt="Twitter"></a></li>
+
+                    <li><a href="http://blog.windingtree.com/"><img src="images/social/wt-social-medium.svg" alt="Medium"></a></li>
+
+                    <li><a href="https://www.youtube.com/channel/UCFuemEOhCfenYMoNdjD0Aew"><img src="images/social/wt-social-youtube.svg" alt="YouTube"></a></li>
+
+                    <li><a href="https://open.kakao.com/o/g2W8pCB"><img src="images/social/wt-social-kakaotalk.svg" alt="Kakao"></a></li>
+                </ul>
+
+            </div>
+
         </div>
-        <ul class="wt-diorama__social social">
-          <li><a href="https://github.com/windingtree"><img src="images/social/wt-social-github.svg" alt="Github"></a></li>
-          <li><a href="https://t.me/windingtree"><img src="images/social/wt-social-telegram.svg" alt="Telegram"></a></li>
-          <li><a href="https://windingtree.rocket.chat/"><img src="images/social/wt-social-rocketchat.svg" alt="Rocket.Chat"></a></li>
-          <li><a href="https://reddit.com/r/windingtree"><img src="images/social/wt-social-reddit.svg" alt="Reddit"></a></li>
-          <li><a href="https://bitcointalk.org/index.php?topic=1946065"><img src="images/social/wt-social-bitcoin.svg" alt="BitcoinTalk"></a></li>
-          <li><a href="https://twitter.com/windingtree"><img src="images/social/wt-social-twitter.svg" alt="Twitter"></a></li>
-          <li><a href="http://blog.windingtree.com/"><img src="images/social/wt-social-medium.svg" alt="Medium"></a></li>
-          <li><a href="https://www.youtube.com/channel/UCFuemEOhCfenYMoNdjD0Aew"><img src="images/social/wt-social-youtube.svg" alt="YouTube"></a></li>
-          <li><a href="https://open.kakao.com/o/g2W8pCB"><img src="images/social/wt-social-kakaotalk.svg" alt="Kakao"></a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
 
-  <section class="page-section page-section--thick wt-sale">
-    <div class="wrapper">
-      <h2 class="wt-sale__header title title--small">Token Sale</h2>
-      <h3>February 1st, 2018</h3>
+    </section>
 
-      <div class="wt-sale__countdown">00d : 00h : 00m : 00s</div>
-      <script>
-      var countDownDate = new Date("2018-02-01T08:00:00+00:00").getTime();
+ <!--    <section class="page-section page-section--thick wt-sale">
 
-      function refreshCountdown() {
-        var now = new Date().getTime();
+        <div class="wrapper">
 
-        var distance = countDownDate - now;
+            <h2 class="wt-sale__header title title--small">Token Sale</h2>
 
-        var days = ''+Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = ''+Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = ''+Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = ''+Math.floor((distance % (1000 * 60)) / 1000);
+            <h3>February 1st, 2018</h3>
 
-        if (days.length < 2) {
-          days = "0" + days;
-        }
-        if (hours.length < 2) {
-          hours = "0" + hours;
-        }
-        if (minutes.length < 2) {
-          minutes = "0" + minutes;
-        }
-        if (seconds.length < 2) {
-          seconds = "0" + seconds;
-        }
-        document.querySelector('.wt-sale__countdown').innerHTML = days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s";
+            <div class="wt-sale__countdown">00d : 00h : 00m : 00s</div>
 
-        if (distance < 0) {
-        clearInterval(x);
-        document.querySelector('.wt-sale__countdown').innerHTML = '00d : 00h : 00m : 00s';
-        }
-      }
-      var x = setInterval(refreshCountdown, 1000);
-      refreshCountdown();
-      </script>
-      <a href="/token-sale.html#tge" class="btn btn--keep-updated">Join</a>
-    </div>
-  </section>
+            <script>
+            var countDownDate = new Date("2018-02-01T08:00:00+00:00").getTime();
 
-  <section class="wt-partners page-section page-section--thick">
-    <div class="wrapper wrapper--narrow">
-      <hr class="divider divider--wide">
-      <h2 class="title title--medium center">Partners</h2>
-      <ul class="wt-partners__companies row row--gutters row--x-small-gutters row--snug justify-center">
-        <li class="row__medium6"><img src="images/partners/lufthansa.svg" alt="Lufthansa"></li>
-        <li class="row__medium6"><img src="images/partners/swiss.svg" alt="Swiss"></li>
-        <li class="row__medium6"><img src="images/partners/air-new-zealand.svg" alt="Air New Zeland"></li>
-        <li class="row__medium6"><img src="images/partners/austrian.svg" alt="Austrian"></li>
-        <li class="row__medium6"><img src="images/partners/brussels.svg" alt="Brussels Airlines"></li>
-        <li class="row__medium6"><img src="images/partners/eurowings.svg" alt="Eurowings"></li>
-        <li class="row__medium6 pt40 center"><img class="zeppelin" src="images/partners/zeppelin.svg" alt="Zeppelin OS"></li>
-        <li class="row__medium6 center"><img src="images/partners/rsk.png" style="max-width: 200px;" alt="RSK"></li>
-        <li class="row__medium6"><img src="images/partners/nordic.png" style="max-width: 400px;" alt="Nordic Choice Hotels"></li>
-      </ul>
-    </div>
-  </section>
+            function refreshCountdown() {
+                var now = new Date().getTime();
 
-  <section class="wt-future page-section page-section--thick">
-    <div class="wrapper">
-      <div class="row row--gutters row--snug row--small-no-gutters">
-        <div class="wt-future__lhs row__medium6">
-          <hr class="divider divider--left">
-          <h2 class="title title--big left--big">Winding Tree is the future of travel</h2>
+                var distance = countDownDate - now;
+
+                var days = '' + Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = '' + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = '' + Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = '' + Math.floor((distance % (1000 * 60)) / 1000);
+
+                if (days.length < 2) {
+                    days = "0" + days;
+                }
+                if (hours.length < 2) {
+                    hours = "0" + hours;
+                }
+                if (minutes.length < 2) {
+                    minutes = "0" + minutes;
+                }
+                if (seconds.length < 2) {
+                    seconds = "0" + seconds;
+                }
+                document.querySelector('.wt-sale__countdown').innerHTML = days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s";
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.querySelector('.wt-sale__countdown').innerHTML = '00d : 00h : 00m : 00s';
+                }
+            }
+            var x = setInterval(refreshCountdown, 1000);
+            refreshCountdown();
+            </script>
+
+            <a href="/token-sale.html#tge" class="btn btn--keep-updated">Join</a>
+
         </div>
-        <div class="wt-future__rhs row__medium6">
-          <h3 class="wt-future__header">Winding Tree makes travel cheaper for individual travelers and more profitable for providers.</h3>
-          <p class="wt-future__description">Winding Tree is a blockchain-based decentralized open-source travel distribution platform. We make travel cheaper for the end user, while making it more profitable for suppliers.</p>
-          <p class="wt-future__description">No centralized control means no exorbitant transaction fees and no barriers for entry. Moreover, we allow small companies to compete with big players, finally bringing innovation back into the travel industry.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="wt-downloads page-section page-section--thick" id="downloads">
-    <div class="wrapper wrapper--narrow">
-      <div class="row row--gutters row--snug">
-         <div class="wt-downloads__column row__medium6">
-          <img src="images/paper.svg" alt="one pager icon" class="mb20">
-          <a href="files/WT_OP_ENG.pdf"
-            onclick="ga('send', 'event', 'Document', 'download', 'One Pager');"
-            target="_blank" rel="noopener" class="btn btn--download text--caps mb20">Download The One Pager</a>
-            <strong class="wt-downloads__also-available text--caps mb10">Also Available In:</strong>
-            <ul class="wt-downloads__languages">
-              <li>
-                <a href="files/Winding-Tree-in-a-Nutshell_zh-1.pdf"
-                onclick="ga('send', 'event', 'Document', 'download', 'One Pager Chinese');"
-                class="link">中文</a>
-              </li>
-              <li>
-                <a href="files/Winding-Tree-in-a-Nutshell_ko.pdf"
-                onclick="ga('send', 'event', 'Document', 'download', 'One Pager Korean');"
-                class="link">한국어</a>
-              </li>
-              <li>
-                <a href="files/Winding-Tree-in-a-Nutshell_ja.pdf"
-                onclick="ga('send', 'event', 'Document', 'download', 'One Pager Chinese');"
-                class="link">日本語</a>
-              </li>
+
+    </section> -->
+
+    <section class="wt-partners page-section page-section--thick">
+        <div class="wrapper wrapper--narrow">
+            <hr class="divider divider--wide">
+            <h2 class="title title--medium center">Partners</h2>
+            <ul class="wt-partners__companies row row--gutters row--x-small-gutters row--snug justify-center">
+                <li class="row__medium6"><img src="images/partners/lufthansa.svg" alt="Lufthansa"></li>
+                <li class="row__medium6"><img src="images/partners/swiss.svg" alt="Swiss"></li>
+                <li class="row__medium6"><img src="images/partners/air-new-zealand.svg" alt="Air New Zeland"></li>
+                <li class="row__medium6"><img src="images/partners/austrian.svg" alt="Austrian"></li>
+                <li class="row__medium6"><img src="images/partners/brussels.svg" alt="Brussels Airlines"></li>
+                <li class="row__medium6"><img src="images/partners/eurowings.svg" alt="Eurowings"></li>
+                <li class="row__medium6 pt40 center"><img class="zeppelin" src="images/partners/zeppelin.svg" alt="Zeppelin OS"></li>
+                <li class="row__medium6 center"><img src="images/partners/rsk.png" style="max-width: 200px;" alt="RSK"></li>
+                <li class="row__medium6"><img src="images/partners/nordic.png" style="max-width: 400px;" alt="Nordic Choice Hotels"></li>
             </ul>
         </div>
-        <div class="wt-downloads__column row__medium6">
-          <img src="images/whitepaper.svg" alt="white paper icon" class="mb20">
-          <a href="files/White_Paper_EN.pdf"
-            onclick="ga('send', 'event', 'Document', 'download', 'White Paper');"
-            target="_blank" rel="noopener" class="btn btn--download text--caps mb20">Download The White Paper</a>
-            <strong class="wt-downloads__also-available text--caps mb10">Also Available In:</strong>
-          <ul class="wt-downloads__languages">
-            <li>
-              <a href="files/White_Paper_RU.pdf"
-              onclick="ga('send', 'event', 'Document', 'download', 'White Paper Russian');"
-              class="link">Русский</a>
-            </li>
-            <li>
-              <a href="files/White_Paper_ES.pdf"
-              onclick="ga('send', 'event', 'Document', 'download', 'White Paper Spanish');"
-              class="link">Español</a>
-            </li>
-            <li>
-              <a href="files/White_Paper_CHN.pdf"
-              onclick="ga('send', 'event', 'Document', 'download', 'White Paper Chinese');"
-              class="link">中文</a>
-            </li>
-            <li>
-              <a href="files/White_Paper_PT.pdf"
-              onclick="ga('send', 'event', 'Document', 'download', 'White Paper Portuguese');"
-              class="link">Português</a>
-            </li>
-          </ul>
+    </section>
+    <section class="wt-future page-section page-section--thick">
+        <div class="wrapper">
+            <div class="row row--gutters row--snug row--small-no-gutters">
+                <div class="wt-future__lhs row__medium6">
+                    <hr class="divider divider--left">
+                    <h2 class="title title--big left--big">Winding Tree is the future of travel</h2>
+                </div>
+                <div class="wt-future__rhs row__medium6">
+                    <h3 class="wt-future__header">Winding Tree makes travel cheaper for individual travelers and more profitable for providers.</h3>
+                    <p class="wt-future__description">Winding Tree is a blockchain-based decentralized open-source travel distribution platform. We make travel cheaper for the end user, while making it more profitable for suppliers.</p>
+                    <p class="wt-future__description">No centralized control means no exorbitant transaction fees and no barriers for entry. Moreover, we allow small companies to compete with big players, finally bringing innovation back into the travel industry.</p>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+    <section class="wt-downloads page-section page-section--thick" id="downloads">
+        <div class="wrapper wrapper--narrow">
+            <div class="row row--gutters row--snug">
+                <div class="wt-downloads__column row__medium6">
+                    <img src="images/paper.svg" alt="one pager icon" class="mb20">
+                    <a href="files/WT_OP_ENG.pdf" onclick="ga('send', 'event', 'Document', 'download', 'One Pager');" target="_blank" rel="noopener" class="btn btn--outline mb20">Download The One Pager</a>
+                    <strong class="wt-downloads__also-available text--caps mb10">Also Available In:</strong>
+                    <ul class="wt-downloads__languages">
+                        <li>
+                            <a href="files/Winding-Tree-in-a-Nutshell_zh-1.pdf" onclick="ga('send', 'event', 'Document', 'download', 'One Pager Chinese');" class="link">中文</a>
+                        </li>
+                        <li>
+                            <a href="files/Winding-Tree-in-a-Nutshell_ko.pdf" onclick="ga('send', 'event', 'Document', 'download', 'One Pager Korean');" class="link">한국어</a>
+                        </li>
+                        <li>
+                            <a href="files/Winding-Tree-in-a-Nutshell_ja.pdf" onclick="ga('send', 'event', 'Document', 'download', 'One Pager Chinese');" class="link">日本語</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wt-downloads__column row__medium6">
+                    <img src="images/whitepaper.svg" alt="white paper icon" class="mb20">
+                    <a href="files/White_Paper_EN.pdf" onclick="ga('send', 'event', 'Document', 'download', 'White Paper');" target="_blank" rel="noopener" class="btn btn--outline mb20">Download The White Paper</a>
+                    <strong class="wt-downloads__also-available text--caps mb10">Also Available In:</strong>
+                    <ul class="wt-downloads__languages">
+                        <li>
+                            <a href="files/White_Paper_RU.pdf" onclick="ga('send', 'event', 'Document', 'download', 'White Paper Russian');" class="link">Русский</a>
+                        </li>
+                        <li>
+                            <a href="files/White_Paper_ES.pdf" onclick="ga('send', 'event', 'Document', 'download', 'White Paper Spanish');" class="link">Español</a>
+                        </li>
+                        <li>
+                            <a href="files/White_Paper_CHN.pdf" onclick="ga('send', 'event', 'Document', 'download', 'White Paper Chinese');" class="link">中文</a>
+                        </li>
+                        <li>
+                            <a href="files/White_Paper_PT.pdf" onclick="ga('send', 'event', 'Document', 'download', 'White Paper Portuguese');" class="link">Português</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section page-section--100s50" id="token">
+        <div class="wrapper">
+            <div class="wt-token row row--gutters row--snug row--small-no-gutters">
+                <div class="wt-token__lhs row__medium6">
+                    <div class="wt-token__graphic">
+                        <img src="images/wt-lif-token.svg">
+                    </div>
+                </div>
+                <div class="wt-token__rhs row__medium6">
+                    <hr class="divider divider--left">
+                    <h2 class="title title--big left--big">Líf Token</h2>
+                    <div class="wt-token__graphic">
+                        <img src="images/wt-lif-token.svg">
+                    </div>
+                    <p class="wt-token__description">The Líf token facilitates transactions on the Winding Tree platform.</p>
+                    <p class="wt-token__description">Líf is used by travel companies to distribute inventory and make transactions without intermediaries.</p>
+                    <div class="wt-token__available">
+                        <a href="/token-sale.html#tge" class="btn btn--colored-reverse">Join ICO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section page-section--thick">
+        <div class="wrapper">
+            <div class="wt-beneficiaries">
+                <div class="wt-beneficiaries__top">
+                    <hr class="divider divider--wide">
+                    <h2 class="title title--small">Cheaper, Better, Faster Travel</h2>
+                </div>
+                <ul class="row row--gutters row--snug">
+                    <li class="wt-beneficiaries__for row__6 row__medium4">
+                        <div class="wt-beneficiaries__tile">
+                            <img src="images/wt-for-suppliers.svg">
+                        </div>
+                        <h3>For Suppliers</h3>
+                        <p class="wt-beneficiaries__blurb">Suppliers can distribute inventory directly to points of sale, skipping costly intermediaries and bottlenecks to data.</p>
+                    </li>
+                    <li class="wt-beneficiaries__for row__6 row__medium4">
+                        <div class="wt-beneficiaries__tile">
+                            <img src="images/wt-for-sellers.svg">
+                        </div>
+                        <h3>For Sellers of Travel</h3>
+                        <p class="wt-beneficiaries__blurb">Access inventory from all suppliers from a single platform with no markup fees and no barriers to entry.</p>
+                    </li>
+                    <li class="wt-beneficiaries__for row__6 row__medium4">
+                        <div class="wt-beneficiaries__tile">
+                            <img src="images/wt-for-travelers.svg">
+                        </div>
+                        <h3>For Travelers</h3>
+                        <p class="wt-beneficiaries__blurb">Use Líf to pay directly for travel needs.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="wt-videos page-section page-section--thick">
+        <div class="wrapper">
+            <hr class="divider divider--wide">
+            <h2 class="wt-videos__title title title--small title--b-padding-small">Video Updates</h2>
+            <div class="wt-videos__active-wrapper">
+                <div class="wt-videos__active-inner">
+                    <iframe class="wt-videos__active" width="2" height="405" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <ul class="wt-videos__thumbnail-list dragscroll"></ul>
+        </div>
     </div>
-  </section>
-  <section class="page-section page-section--100s50" id="token">
-    <div class="wrapper">
-      <div class="wt-token row row--gutters row--snug row--small-no-gutters">
-        <div class="wt-token__lhs row__medium6">
-          <div class="wt-token__graphic">
-            <img src="images/wt-lif-token.svg">
-          </div>
+    <section class="page-section page-section--thick">
+        <div class="wrapper">
+            <div class="wt-press full-width row row--gutters">
+                <div class="row__medium4">
+                    <hr class="divider divider--left">
+                    <h2 class="title title--big left--big">In The Press</h2>
+                </div>
+                <div class="row__medium8">
+                    <ul class="wt-press__companies row row--gutters row--x-small-gutters">
+                        <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="https://www.reuters.com/article/us-blockchain-travel-airnewzealand/air-new-zealand-swiss-travel-platform-winding-tree-in-blockchain-tie-up-idUSKBN1DM2KQ?il=0"><img src="images/press/reuters.png" alt="Reuters"></a></li>
+                        <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="http://bourse.lefigaro.fr/indices-actions/actu-conseils/lufthansa-signe-un-partenariat-avec-la-start-up-suisse-winding-tree-6293447"><img src="images/press/LeFigaro.png" alt="Le Figaro"></a></li>
+                        <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="http://www.businessinsider.com/r-air-new-zealand-swiss-travel-platform-winding-tree-in-blockchain-tie-up-2017-11"><img src="images/press/businessinsider.png" alt="Business Insider"></a></li>
+                        <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="https://www.coindesk.com/ready-takeoff-lufthansa-strikes-deal-blockchain-ico-startup/"><img src="images/press/coindesk.png" alt="CoinDesk"></a></li>
+                        <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="http://www.nasdaq.com/article/what-might-lufthansas-adoption-of-the-blockchain-technology-mean-for-the-otas-cm859538"><img src="images/press/Nasdaq_logo.png" alt="Nasdaq"></a></li>
+                        <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="http://www.tagesspiegel.de/wirtschaft/airbnb-ohne-airbnb-wie-konzerne-die-blockchain-nutzen/20425860.html"><img src="images/press/Der_Tagesspiegel_Logo.png" alt="Der Tagesspiegel"></a></li>
+                        <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="https://www.forbes.com/sites/chynes/2017/09/27/why-southeast-asias-airlines-should-embrace-blockchain-technology-sooner-rather-than-later"><img src="images/press/forbes.png" alt="Forbes"></a></li>
+                        <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="https://venturebeat.com/2017/08/23/blockchain-startup-winding-tree-could-upend-the-travel-industry/"><img src="images/press/VentureBeat.png" alt="VentureBeat"></a></li>
+                        <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="https://thenextweb.com/money/2017/09/08/1075124/"><img src="images/press/thenextweb.png" alt="The Next Web"></a></li>
+                        <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="https://skift.com/2017/10/10/lufthansa-partners-with-a-blockchain-provider-in-an-investment-worth-testing/"><img src="images/press/wt-press-skift.png" alt="Skift"></a></li>
+                        <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="https://www.tnooz.com/article/applications-of-blockchain-travel/"><img src="images/press/wt-press-tnooz.png" alt="tnooz"></a></li>
+                        <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="https://www.cryptocoinsnews.com/lufthansa-partners-blockchain-startup-travel-apps-participates-ico/"><img src="images/press/cryptocoinnews.png" alt="CryptoCoinsNews"></a></li>
+                        <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="http://www.sohu.com/a/159450021_201003"><img src="images/press/wt-press-sohu.png" alt="SOHU.com"></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="wt-token__rhs row__medium6">
-          <hr class="divider divider--left">
-          <h2 class="title title--big left--big">Líf Token</h2>
-          <div class="wt-token__graphic">
-            <img src="images/wt-lif-token.svg">
-          </div>
-          <p class="wt-token__description">The Líf token facilitates transactions on the Winding Tree platform.</p>
-          <p class="wt-token__description">Líf is used by travel companies to distribute inventory and make transactions without intermediaries.</p>
-          <div class="wt-token__available">
-            <a href="/token-sale.html#tge" class="btn btn--outline">Token Generation Event</a>
-          </div>
+    </section>
+    <section class="page-section page-section--thick page-section--team" id="team">
+        <div class="wrapper">
+            <div class="wt-team">
+                <img class="wt-team__bg" src="images/bg/wt-nodes-bg.png" alt="Nodes background">
+                <hr class="divider divider--wide">
+                <h2 class="title title--small center">Winding Tree Team</h2>
+                <div class="row row--gutters row--snug">
+                    <div class="profile row__6">
+                        <div class="profile__lhs">
+                            <img class="profile__mugshot" src="images/team/max.jpg">
+                        </div>
+                        <div class="profile__rhs">
+                            <h3 class="profile__name caps">Maksim Izmaylov, CEO</h3>
+                            <p class="profile__description">Maksim Izmaylov is a software engineer and entrepreneur, previously founder of Roomstorm and Travel Tech Con.</p>
+                            <ul class="profile__social social social--small social--snug">
+                                <li><a href="https://github.com/kvakes"><img src="images/social/wt-social-github.svg" alt="Github"></a></li>
+                                <li><a href="https://twitter.com/kvakes"><img src="images/social/wt-social-twitter.svg" alt="Twitter"></a></li>
+                                <li><a href="https://www.linkedin.com/in/maksimizmaylov/"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
+                                <li><a href="https://ycombinator.com/"><img src="images/social/wt-social-ycombinator.svg" alt="Y Combinator"></a></li>
+                                <li><a href="http://kvakes.com/"><img src="images/social/wt-social-website.svg" alt="Website"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="profile row__6">
+                        <div class="profile__lhs">
+                            <img class="profile__mugshot" src="images/team/jakub.jpg">
+                        </div>
+                        <div class="profile__rhs">
+                            <h3 class="profile__name caps">Jakub Vysoký, CTO</h3>
+                            <p class="profile__description">Jakub is a backend engineer who previously worked on Roomstorm and before on high-load projects like Giant Bomb and Mythbusters.</p>
+                            <ul class="profile__social social social--small social--snug">
+                                <li><a href="https://github.com/kvbik"><img src="images/social/wt-social-github.svg" alt="Github"></a></li>
+                                <li><a href="https://twitter.com/kvbik"><img src="images/social/wt-social-twitter.svg" alt="Twitter"></a></li>
+                                <li><a href="https://www.linkedin.com/in/jakubvysoky"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
+                                <li><a href="https://ycombinator.com/"><img src="images/social/wt-social-ycombinator.svg" alt="Y Combinator"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row--gutters row--snug">
+                    <div class="profile row__6">
+                        <div class="profile__lhs">
+                            <img class="profile__mugshot" src="images/team/pedro.jpg">
+                        </div>
+                        <div class="profile__rhs">
+                            <h3 class="profile__name caps">Pedro Anderson, COO</h3>
+                            <p class="profile__description">Pedro is a crypto-investor and a social entrepreneur. Being in charge of partnerships at WT, he had previously sold millions of dollars of SaaS products.</p>
+                            <ul class="profile__social social social--small social--snug">
+                                <li><a href="https://www.linkedin.com/in/pedro-renaud-anderson-08012913/"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
+                                <li><a href="https://twitter.com/pedro_r_a"><img src="images/social/wt-social-twitter.svg" alt="Twitter"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="profile row__6">
+                        <div class="profile__lhs">
+                            <img class="profile__mugshot" src="images/team/augusto.jpg">
+                        </div>
+                        <div class="profile__rhs">
+                            <h3 class="profile__name caps">Augusto Lemble,<br>Blockchain Architect</h3>
+                            <p class="profile__description">Blockchain hacker, full-stack developer. He is in charge of smart contracts development, security and integration of the Winding Tree libraries and services.</p>
+                            <ul class="profile__social social social--small social--snug">
+                                <li><a href="https://github.com/AugustoL"><img src="images/social/wt-social-github.svg" alt="Github"></a></li>
+                                <li><a href="https://twitter.com/lembleaugusto"><img src="images/social/wt-social-twitter.svg" alt="Twitter"></a></li>
+                                <li><a href="https://www.linkedin.com/in/augusto-lemble-812b47a0/"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+    <section class="page-section page-section--thick page-section--no-t-padding">
+        <div class="wrapper">
+            <div class="wt-advisors">
+                <img class="wt-advisors__bg" src="images/bg/wt-nodes-bg.png" alt="Nodes background">
+                <div class="row row--gutters row--snug">
+                    <div class="profile row__6">
+                        <div class="profile__lhs">
+                            <img class="profile__mugshot" src="images/team/norm.jpg">
+                        </div>
+                        <div class="profile__rhs">
+                            <h3 class="profile__name caps">Norm Rose, Advisor</h3>
+                            <p class="profile__description">For over two decades, Norm has been an analyst and consultant focused on emerging technologies and how they impact business practices in the global travel industry.</p>
+                            <ul class="profile__social social social--small social--snug">
+                                <li><a href="https://twitter.com/normtraveltech"><img src="images/social/wt-social-twitter.svg" alt="Twitter"></a></li>
+                                <li><a href="https://www.linkedin.com/in/traveltechnology"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
+                                <li><a href="http://www.traveltechnology.com/"><img src="images/social/wt-social-website.svg" alt="Website"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="profile row__6">
+                        <div class="profile__lhs">
+                            <img class="profile__mugshot" src="images/team/manuel.jpg">
+                        </div>
+                        <div class="profile__rhs">
+                            <h3 class="profile__name caps">Manuel Araoz, Advisor</h3>
+                            <p class="profile__description">Manuel is the Founder and CTO of Zeppelin Solutions, the leading blockchain security auditing company. Manuel also advises Decentraland, and has previously worked as a Software Engineer for BitPay leading the development of Bitcore. He also developed one of the first apps on Bitcoin providing Proof of Existance and proposed BIP 45 introducing multi-signature wallets on the bitcoin protocol.</p>
+                            <ul class="profile__social social social--small social--snug">
+                                <li><a href="https://www.linkedin.com/in/manuelaraoz/"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row--gutters row--snug">
+                    <div class="profile row__6">
+                        <div class="profile__lhs">
+                            <img class="profile__mugshot" src="images/team/bill.jpg">
+                        </div>
+                        <div class="profile__rhs">
+                            <h3 class="profile__name caps">William Niejadlik, Advisor</h3>
+                            <p class="profile__description">William is a travel technologist with over 20 years of experience (he was the founder and CTO of Vayama). William is also a crypto-investor (Polychain, Tezos) and his wife helped to build Coinbase.</p>
+                            <ul class="profile__social social social--small social--snug">
+                                <li><a href="https://www.linkedin.com/in/williamniejadlik"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
+                                <li><a href="http://www.niejadlik.com/"><img src="images/social/wt-social-website.svg" alt="Website"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="profile row__6">
+                        <div class="profile__lhs">
+                            <img class="profile__mugshot" src="images/team/douglas.jpg">
+                        </div>
+                        <div class="profile__rhs">
+                            <h3 class="profile__name caps">Douglas Rice, Advisor</h3>
+                            <p class="profile__description">Douglas Rice is an industry leader in the global hospitality technology industry. He is best known for his role as a founder of the global non-profit industry association Hotel Technology Next Generation.</p>
+                            <ul class="profile__social social social--small social--snug">
+                                <li><a href="https://www.linkedin.com/in/ricedouglas/"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row--gutters row--snug">
+                    <div class="profile row__6">
+                        <div class="profile__lhs">
+                            <img class="profile__mugshot" src="images/team/johnny.jpg">
+                        </div>
+                        <div class="profile__rhs">
+                            <h3 class="profile__name caps">Johnny Thorsen, Advisor</h3>
+                            <p class="profile__description">Johnny is a passionate innovator and enjoys distrupting the status quo. Previously he served as Senior Director of Strategy and Product Marketing for Concur Risk Messaging and Senior Director at SAP Mobile Services. Currently he is a VP of Travel Strategy at Mezi.</p>
+                            <ul class="profile__social social social--small social--snug">
+                                <li><a href="https://www.linkedin.com/in/johnnythorsen/"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wt-join__page-section page-section page-section--thick relative overflow-hidden mb0-small">
+        <div class="wrapper">
+            <div class="wt-join">
+                <hr class="divider divider--wide">
+                <h2 class="title title--small">Join The Team</h2>
+                <p>
+                    Join our team, we're hiring! Send your GitHub profile and resume to
+                    <br/>
+                    <a class="link wt-join__email-link" href="mailto:jobs@windingtree.com">jobs@windingtree.com</a>
+                </p>
+                <div class="row row--gutters row--snug">
+                    <div class="wt-join__rec-wrapper row__medium6">
+                        <div class="wt-join__rec wt-join__rec--left">
+                            <div class="wt-join__thumb-container mb20-small">
+                                <img src="images/wt-dev.svg" alt="dev">
+                            </div>
+                            <h3 class="wt-join__title">FullStack JS Developer</h3>
+                            <ul class="wt-join__list">
+                                <li>MongoDB + NodeJS + ReactJS + Web (HTML5 + Bootstrap)</li>
+                                <li>Location: Anywhere</li>
+                                <li>Requirements: Good level of English and Github experience.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wt-join__rec-wrapper row__medium6">
+                        <div class="wt-join__rec wt-join__rec--right">
+                            <div class="wt-join__thumb-container">
+                                <img src="images/wt-dev.svg" alt="dev">
+                            </div>
+                            <h3 class="wt-join__title">Dapp Developer</h3>
+                            <ul class="wt-join__list">
+                                <li>Solidity + Web3 + Ethereum DevOps + ReactJS + Web (HTML5 + Bootstrap)</li>
+                                <li>Location: Anywhere</li>
+                                <li>Requirements: Good level of English and Github experience.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="page-section page-section--thick relative">
+        <div class="wrapper">
+            <div class="wt-connect">
+                <img class="wt-connect__leaves-left" src="images/bg/wt-leaves-left.svg">
+                <img class="wt-connect__leaves-right" src="images/bg/wt-leaves-right.svg">
+                <hr class="divider divider--wide">
+                <h2 class="title title--small mb50">Connect</h2>
+                <ul class="wt-connect__social social social--big nowrap">
+                    <li><a href="https://github.com/windingtree"><img src="images/social/wt-social-github.svg" alt="Github"></a></li>
+                    <li><a href="https://t.me/windingtree"><img src="images/social/wt-social-telegram.svg" alt="Telegram"></a></li>
+                    <li><a href="https://windingtree.rocket.chat/"><img src="images/social/wt-social-rocketchat.svg" alt="Rocket.Chat"></a></li>
+                    <li><a href="https://reddit.com/r/windingtree"><img src="images/social/wt-social-reddit.svg" alt="Reddit"></a></li>
+                    <li><a href="https://bitcointalk.org/index.php?topic=1946065"><img src="images/social/wt-social-bitcoin.svg" alt="BitcoinTalk"></a></li>
+                    <li><a href="https://twitter.com/windingtree"><img src="images/social/wt-social-twitter.svg" alt="Twitter"></a></li>
+                    <li><a href="http://blog.windingtree.com/"><img src="images/social/wt-social-medium.svg" alt="Medium"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCFuemEOhCfenYMoNdjD0Aew"><img src="images/social/wt-social-youtube.svg" alt="YouTube"></a></li>
+                    <li><a href="https://open.kakao.com/o/g2W8pCB"><img src="images/social/wt-social-kakaotalk.svg" alt="Kakao"></a></li>
+                </ul>
+                <a class="wt-connect__back-to-top" href="#top">
+                    <svg width="50" height="50" viewBox="0 0 50 50">
+                        <title>back to top</title>
+                        <defs>
+                            <circle id="a" cx="25" cy="25" r="25" />
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                            <use class="bg" xlink:href="#a" />
+                            <circle stroke="#4784E9" cx="25" cy="25" r="24.5" />
+                            <path d="M26.5 20.4L35 29l2-2-12-12-12 12 2 2 8.5-8.5V37h3V20.4z" class="fg" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    {% include footer.html %}
     </div>
-  </section>
-  <section class="page-section page-section--thick">
-    <div class="wrapper">
-      <div class="wt-beneficiaries">
-        <div class="wt-beneficiaries__top">
-          <hr class="divider divider--wide">
-          <h2 class="title title--small">Cheaper, Better, Faster Travel</h2>
-        </div>
-        <ul class="row row--gutters row--snug">
-          <li class="wt-beneficiaries__for row__6 row__medium4">
-            <div class="wt-beneficiaries__tile">
-              <img src="images/wt-for-suppliers.svg">
-            </div>
-            <h3>For Suppliers</h3>
-            <p class="wt-beneficiaries__blurb">Suppliers can distribute inventory directly to points of sale, skipping costly intermediaries and bottlenecks to data.</p>
-          </li>
-          <li class="wt-beneficiaries__for row__6 row__medium4">
-            <div class="wt-beneficiaries__tile">
-              <img src="images/wt-for-sellers.svg">
-            </div>
-            <h3>For Sellers of Travel</h3>
-            <p class="wt-beneficiaries__blurb">Access inventory from all suppliers from a single platform with no markup fees and no barriers to entry.</p>
-          </li>
-          <li class="wt-beneficiaries__for row__6 row__medium4">
-            <div class="wt-beneficiaries__tile">
-              <img src="images/wt-for-travelers.svg">
-            </div>
-            <h3>For Travelers</h3>
-            <p class="wt-beneficiaries__blurb">Use Líf to pay directly for travel needs.</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <div class="wt-videos page-section page-section--thick">
-    <div class="wrapper">
-      <hr class="divider divider--wide">
-      <h2 class="wt-videos__title title title--small title--b-padding-small">Video Updates</h2>
-      <div class="wt-videos__active-wrapper">
-        <div class="wt-videos__active-inner">
-          <iframe class="wt-videos__active" width="2" height="405" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <ul class="wt-videos__thumbnail-list dragscroll"></ul>
-
-    </div>
-  </div>
-
-  <section class="page-section page-section--thick">
-    <div class="wrapper">
-      <div class="wt-press full-width row row--gutters">
-        <div class="row__medium4">
-          <hr class="divider divider--left">
-          <h2 class="title title--big left--big">In The Press</h2>
-        </div>
-        <div class="row__medium8">
-          <ul class="wt-press__companies row row--gutters row--x-small-gutters">
-            <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="https://www.reuters.com/article/us-blockchain-travel-airnewzealand/air-new-zealand-swiss-travel-platform-winding-tree-in-blockchain-tie-up-idUSKBN1DM2KQ?il=0"><img src="images/press/reuters.png" alt="Reuters"></a></li>
-            <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="http://bourse.lefigaro.fr/indices-actions/actu-conseils/lufthansa-signe-un-partenariat-avec-la-start-up-suisse-winding-tree-6293447"><img src="images/press/LeFigaro.png" alt="Le Figaro"></a></li>
-            <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="http://www.businessinsider.com/r-air-new-zealand-swiss-travel-platform-winding-tree-in-blockchain-tie-up-2017-11"><img src="images/press/businessinsider.png" alt="Business Insider"></a></li>
-            <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="https://www.coindesk.com/ready-takeoff-lufthansa-strikes-deal-blockchain-ico-startup/"><img src="images/press/coindesk.png" alt="CoinDesk"></a></li>
-            <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="http://www.nasdaq.com/article/what-might-lufthansas-adoption-of-the-blockchain-technology-mean-for-the-otas-cm859538"><img src="images/press/Nasdaq_logo.png" alt="Nasdaq"></a></li>
-            <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="http://www.tagesspiegel.de/wirtschaft/airbnb-ohne-airbnb-wie-konzerne-die-blockchain-nutzen/20425860.html"><img src="images/press/Der_Tagesspiegel_Logo.png" alt="Der Tagesspiegel"></a></li>
-            <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="https://www.forbes.com/sites/chynes/2017/09/27/why-southeast-asias-airlines-should-embrace-blockchain-technology-sooner-rather-than-later"><img src="images/press/forbes.png" alt="Forbes"></a></li>
-            <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="https://venturebeat.com/2017/08/23/blockchain-startup-winding-tree-could-upend-the-travel-industry/"><img src="images/press/VentureBeat.png" alt="VentureBeat"></a></li>
-            <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="https://thenextweb.com/money/2017/09/08/1075124/"><img src="images/press/thenextweb.png" alt="The Next Web"></a></li>
-            <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="https://skift.com/2017/10/10/lufthansa-partners-with-a-blockchain-provider-in-an-investment-worth-testing/"><img src="images/press/wt-press-skift.png" alt="Skift"></a></li>
-            <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="https://www.tnooz.com/article/applications-of-blockchain-travel/"><img src="images/press/wt-press-tnooz.png" alt="tnooz"></a></li>
-            <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="https://www.cryptocoinsnews.com/lufthansa-partners-blockchain-startup-travel-apps-participates-ico/"><img src="images/press/cryptocoinnews.png" alt="CryptoCoinsNews"></a></li>
-            <li class="row__4 row__medium3"><a target="_blank" rel="noopener" href="http://www.sohu.com/a/159450021_201003"><img src="images/press/wt-press-sohu.png" alt="SOHU.com"></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="page-section page-section--thick page-section--team" id="team">
-    <div class="wrapper">
-      <div class="wt-team">
-        <img class="wt-team__bg" src="images/bg/wt-nodes-bg.png" alt="Nodes background">
-        <hr class="divider divider--wide">
-        <h2 class="title title--small center">Winding Tree Team</h2>
-        <div class="row row--gutters row--snug">
-          <div class="profile row__6">
-            <div class="profile__lhs">
-              <img class="profile__mugshot" src="images/team/max.jpg">
-            </div>
-            <div class="profile__rhs">
-              <h3 class="profile__name caps">Maksim Izmaylov, CEO</h3>
-              <p class="profile__description">Maksim Izmaylov is a software engineer and entrepreneur, previously founder of Roomstorm and Travel Tech Con.</p>
-              <ul class="profile__social social social--small social--snug">
-                <li><a href="https://github.com/kvakes"><img src="images/social/wt-social-github.svg" alt="Github"></a></li>
-                <li><a href="https://twitter.com/kvakes"><img src="images/social/wt-social-twitter.svg" alt="Twitter"></a></li>
-                <li><a href="https://www.linkedin.com/in/maksimizmaylov/"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
-                <li><a href="https://ycombinator.com/"><img src="images/social/wt-social-ycombinator.svg" alt="Y Combinator"></a></li>
-                <li><a href="http://kvakes.com/"><img src="images/social/wt-social-website.svg" alt="Website"></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="profile row__6">
-            <div class="profile__lhs">
-              <img class="profile__mugshot" src="images/team/jakub.jpg">
-            </div>
-            <div class="profile__rhs">
-              <h3 class="profile__name caps">Jakub Vysoký, CTO</h3>
-              <p class="profile__description">Jakub is a backend engineer who previously worked on Roomstorm and before on high-load projects like Giant Bomb and Mythbusters.</p>
-              <ul class="profile__social social social--small social--snug">
-                <li><a href="https://github.com/kvbik"><img src="images/social/wt-social-github.svg" alt="Github"></a></li>
-                <li><a href="https://twitter.com/kvbik"><img src="images/social/wt-social-twitter.svg" alt="Twitter"></a></li>
-                <li><a href="https://www.linkedin.com/in/jakubvysoky"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
-                <li><a href="https://ycombinator.com/"><img src="images/social/wt-social-ycombinator.svg" alt="Y Combinator"></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row row--gutters row--snug">
-          <div class="profile row__6">
-            <div class="profile__lhs">
-              <img class="profile__mugshot" src="images/team/pedro.jpg">
-            </div>
-            <div class="profile__rhs">
-              <h3 class="profile__name caps">Pedro Anderson, COO</h3>
-              <p class="profile__description">Pedro is a crypto-investor and a social entrepreneur. Being in charge of partnerships at WT, he had previously sold millions of dollars of SaaS products.</p>
-              <ul class="profile__social social social--small social--snug">
-                <li><a href="https://www.linkedin.com/in/pedro-renaud-anderson-08012913/"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
-                <li><a href="https://twitter.com/pedro_r_a"><img src="images/social/wt-social-twitter.svg" alt="Twitter"></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="profile row__6">
-            <div class="profile__lhs">
-              <img class="profile__mugshot" src="images/team/augusto.jpg">
-            </div>
-            <div class="profile__rhs">
-              <h3 class="profile__name caps">Augusto Lemble,<br>Blockchain Architect</h3>
-              <p class="profile__description">Blockchain hacker, full-stack developer. He is in charge of smart contracts development, security and integration of the Winding Tree libraries and services.</p>
-              <ul class="profile__social social social--small social--snug">
-                <li><a href="https://github.com/AugustoL"><img src="images/social/wt-social-github.svg" alt="Github"></a></li>
-                <li><a href="https://twitter.com/lembleaugusto"><img src="images/social/wt-social-twitter.svg" alt="Twitter"></a></li>
-                <li><a href="https://www.linkedin.com/in/augusto-lemble-812b47a0/"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="page-section page-section--thick page-section--no-t-padding">
-    <div class="wrapper">
-      <div class="wt-advisors">
-        <img class="wt-advisors__bg" src="images/bg/wt-nodes-bg.png" alt="Nodes background">
-        <div class="row row--gutters row--snug">
-          <div class="profile row__6">
-            <div class="profile__lhs">
-              <img class="profile__mugshot" src="images/team/norm.jpg">
-            </div>
-            <div class="profile__rhs">
-              <h3 class="profile__name caps">Norm Rose, Advisor</h3>
-              <p class="profile__description">For over two decades, Norm has been an analyst and consultant focused on emerging
-  technologies and how they impact business practices in the global travel industry.</p>
-              <ul class="profile__social social social--small social--snug">
-                <li><a href="https://twitter.com/normtraveltech"><img src="images/social/wt-social-twitter.svg" alt="Twitter"></a></li>
-                <li><a href="https://www.linkedin.com/in/traveltechnology"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
-                <li><a href="http://www.traveltechnology.com/"><img src="images/social/wt-social-website.svg" alt="Website"></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="profile row__6">
-            <div class="profile__lhs">
-              <img class="profile__mugshot" src="images/team/manuel.jpg">
-            </div>
-            <div class="profile__rhs">
-              <h3 class="profile__name caps">Manuel Araoz, Advisor</h3>
-              <p class="profile__description">Manuel is the Founder and CTO of Zeppelin Solutions, the leading blockchain security auditing company. Manuel also advises Decentraland, and has previously worked as a Software Engineer for BitPay leading the development of Bitcore. He also developed one of the first apps on Bitcoin providing Proof of Existance and proposed BIP 45 introducing multi-signature wallets on the bitcoin protocol.</p>
-              <ul class="profile__social social social--small social--snug">
-                <li><a href="https://www.linkedin.com/in/manuelaraoz/"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row row--gutters row--snug">
-          <div class="profile row__6">
-            <div class="profile__lhs">
-              <img class="profile__mugshot" src="images/team/bill.jpg">
-            </div>
-            <div class="profile__rhs">
-              <h3 class="profile__name caps">William Niejadlik, Advisor</h3>
-              <p class="profile__description">William is a travel technologist with over 20 years of experience (he was the founder and CTO of Vayama). William is also a crypto-investor (Polychain, Tezos) and his wife helped to build Coinbase.</p>
-              <ul class="profile__social social social--small social--snug">
-                <li><a href="https://www.linkedin.com/in/williamniejadlik"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
-                <li><a href="http://www.niejadlik.com/"><img src="images/social/wt-social-website.svg" alt="Website"></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="profile row__6">
-            <div class="profile__lhs">
-              <img class="profile__mugshot" src="images/team/douglas.jpg">
-            </div>
-            <div class="profile__rhs">
-              <h3 class="profile__name caps">Douglas Rice, Advisor</h3>
-              <p class="profile__description">Douglas Rice is an industry leader in the global hospitality technology industry. He is best known for his role as a founder of the global non-profit industry association Hotel Technology Next Generation.</p>
-              <ul class="profile__social social social--small social--snug">
-                <li><a href="https://www.linkedin.com/in/ricedouglas/"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row row--gutters row--snug">
-          <div class="profile row__6">
-            <div class="profile__lhs">
-              <img class="profile__mugshot" src="images/team/johnny.jpg">
-            </div>
-            <div class="profile__rhs">
-              <h3 class="profile__name caps">Johnny Thorsen, Advisor</h3>
-              <p class="profile__description">Johnny is a passionate innovator and enjoys distrupting the status quo. Previously he served as Senior Director of Strategy and Product Marketing for Concur Risk Messaging and Senior Director at SAP Mobile Services. Currently he is a VP of Travel Strategy at Mezi.</p>
-              <ul class="profile__social social social--small social--snug">
-                <li><a href="https://www.linkedin.com/in/johnnythorsen/"><img src="images/social/wt-social-linkedin.svg" alt="Linkedin"></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="wt-join__page-section page-section page-section--thick relative overflow-hidden mb0-small">
-    <div class="wrapper">
-      <div class="wt-join">
-        <hr class="divider divider--wide">
-        <h2 class="title title--small">Join The Team</h2>
-        <p>
-          Join our team, we're hiring! Send your GitHub profile and resume to<br/>
-          <a class="link wt-join__email-link" href="mailto:jobs@windingtree.com">jobs@windingtree.com</a>
-        </p>
-        <div class="row row--gutters row--snug">
-          <div class="wt-join__rec-wrapper row__medium6">
-            <div class="wt-join__rec wt-join__rec--left">
-              <div class="wt-join__thumb-container mb20-small">
-                <img src="images/wt-dev.svg" alt="dev">
-              </div>
-              <h3 class="wt-join__title">FullStack JS Developer</h3>
-              <ul class="wt-join__list">
-                <li>MongoDB + NodeJS + ReactJS + Web (HTML5 + Bootstrap)</li>
-                <li>Location: Anywhere</li>
-                <li>Requirements: Good level of English and Github experience.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="wt-join__rec-wrapper row__medium6">
-            <div class="wt-join__rec wt-join__rec--right">
-              <div class="wt-join__thumb-container">
-                <img src="images/wt-dev.svg" alt="dev">
-              </div>
-              <h3 class="wt-join__title">Dapp Developer</h3>
-              <ul class="wt-join__list">
-                <li>Solidity + Web3 + Ethereum DevOps + ReactJS + Web (HTML5 + Bootstrap)</li>
-                <li>Location: Anywhere</li>
-                <li>Requirements: Good level of English and Github experience.</li>
-              </ul>
-            </div>
-          </div>
-      </div>
-    </div>
-  </section>
-  <section class="page-section page-section--thick relative">
-    <div class="wrapper">
-      <div class="wt-connect">
-        <img class="wt-connect__leaves-left" src="images/bg/wt-leaves-left.svg">
-        <img class="wt-connect__leaves-right" src="images/bg/wt-leaves-right.svg">
-        <hr class="divider divider--wide">
-        <h2 class="title title--small mb50">Connect</h2>
-        <ul class="wt-connect__social social social--big nowrap">
-          <li><a href="https://github.com/windingtree"><img src="images/social/wt-social-github.svg" alt="Github"></a></li>
-          <li><a href="https://t.me/windingtree"><img src="images/social/wt-social-telegram.svg" alt="Telegram"></a></li>
-          <li><a href="https://windingtree.rocket.chat/"><img src="images/social/wt-social-rocketchat.svg" alt="Rocket.Chat"></a></li>
-          <li><a href="https://reddit.com/r/windingtree"><img src="images/social/wt-social-reddit.svg" alt="Reddit"></a></li>
-          <li><a href="https://bitcointalk.org/index.php?topic=1946065"><img src="images/social/wt-social-bitcoin.svg" alt="BitcoinTalk"></a></li>
-          <li><a href="https://twitter.com/windingtree"><img src="images/social/wt-social-twitter.svg" alt="Twitter"></a></li>
-          <li><a href="http://blog.windingtree.com/"><img src="images/social/wt-social-medium.svg" alt="Medium"></a></li>
-          <li><a href="https://www.youtube.com/channel/UCFuemEOhCfenYMoNdjD0Aew"><img src="images/social/wt-social-youtube.svg" alt="YouTube"></a></li>
-          <li><a href="https://open.kakao.com/o/g2W8pCB"><img src="images/social/wt-social-kakaotalk.svg" alt="Kakao"></a></li>
-        </ul>
-        <a class="wt-connect__back-to-top" href="#top">
-          <svg width="50" height="50" viewBox="0 0 50 50">
-            <title>back to top</title>
-            <defs>
-              <circle id="a" cx="25" cy="25" r="25"/>
-            </defs>
-            <g fill="none" fill-rule="evenodd">
-              <use class="bg" xlink:href="#a"/>
-              <circle stroke="#4784E9" cx="25" cy="25" r="24.5"/>
-              <path d="M26.5 20.4L35 29l2-2-12-12-12 12 2 2 8.5-8.5V37h3V20.4z" class="fg"/>
-            </g>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
-  {% include footer.html %}
-</div>

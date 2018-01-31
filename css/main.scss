@@ -45,6 +45,7 @@ $lh-body: 30px;
   }
 }
 
+
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -116,7 +117,7 @@ ul {
 }
 
 .items-center {
-  aign-items: center;
+  align-items: center;
 }
 
 .no-padding {
@@ -286,16 +287,36 @@ $divider-size: 3px;
 
 .btn {
   text-decoration: none;
+  display: inline-block;
   padding: 0 15px;
   height: 40px;
   line-height: 40px;
   font-weight: $fw-semi-bold;
   background: none;
+  border-radius: 20px;
   -webkit-appearance: none;
   border: 0;
   outline: 0;
   cursor: pointer;
   font-family: inherit;
+  color: #4784e9;
+  font-size: 18px;
+}
+
+
+
+.btn--colored-reverse {
+  background-color: $color-indigo;
+  color: $color-white !important;
+  //border: none !important;
+  width: 266px;
+    max-width: 100%;
+    text-align: center;
+  &:hover{
+    background-color: #FF5F49;
+    opacity:1 !important;
+    //border: none !important;
+  }
 }
 
 .btn--outline {
@@ -305,14 +326,14 @@ $divider-size: 3px;
   white-space: nowrap;
   border-radius: 20px;
   border: solid 1px #4784e9;
-  text-transform: uppercase;
-  color: #4784e9;
-  font-size: 14px;
+  //text-transform: uppercase;
+  
   font-weight: $fw-semi-bold;
 
   &:hover {
-    background-color: #4784e9;
+    background-color: #FF5F49;
     color: #fff;
+    border: none;
   }
 }
 
@@ -322,16 +343,12 @@ $divider-size: 3px;
   line-height: 40px;
   white-space: nowrap;
   border-radius: 20px;
-  background-color: #fff;
-  text-transform: uppercase;
-  color: #4784e9;
-  font-size: 14px;
+
+  //text-transform: uppercase;
+
+  font-size: 18px;
   font-weight: $fw-semi-bold;
 
-  &:hover {
-    background-color: #4784e9;
-    color: #fff;
-  }
 }
 
 .h40 {
@@ -344,8 +361,16 @@ $divider-size: 3px;
 }
 
 .btn--token-sale {
-  background-color: $color-obsidian;
-  text-transform: uppercase;
+  height: 80px;
+  line-height: 80px;
+  font-size: 22px;
+  
+  @include at-small {
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+
+  }
 }
 
 .btn--keep-updated {
@@ -610,7 +635,7 @@ $x-small-gutter: 20px;
   background-image: radial-gradient(circle at center, #F1FFE3, #AAE0F2);
 
   @include at-medium {
-    height: 620px;
+    height: 820px;
   }
 
   &__hamburger {
@@ -662,7 +687,21 @@ $x-small-gutter: 20px;
   }
 
   &__social {
+    
+    display: block !important;
+    position: fixed;
+    top: 100px;
+    right:20px;
+    z-index: 101;
+
+    li {
+      margin-bottom: 20px;
+    }
+
     @include at-small {
+      display: none !important;
+    }
+    @include to-large {
       display: none !important;
     }
   }
@@ -677,7 +716,7 @@ $x-small-gutter: 20px;
     pointer-events: none;
 
     @include at-small {
-      top: 120px;
+      top: 320px;
       max-width: 580px;
       transform: translate(-50%, -25%);
       width: 100%;
@@ -702,6 +741,10 @@ $x-small-gutter: 20px;
 
     @include at-medium {
       margin: 10px 20px 0 0;
+    }
+
+    @include at-small {
+      height: 50px;
     }
   }
 
@@ -754,6 +797,7 @@ $x-small-gutter: 20px;
 
     @include at-small {
       width: 100%;
+
     }
 
     @include at-medium {
@@ -767,11 +811,19 @@ $x-small-gutter: 20px;
 
   &__bottom-nav-token-sale {
     display: inline-block;
-    color: $color-white;
-    margin: 0 0 20px;
+    //color: $color-white;
+    margin: 20px 0 20px;
+    border-radius: 40px;
+    text-transform: none;
+    //width: 266px;
+    //max-width: 100%;
 
     @include at-medium {
-      display: none;
+      //display: none;
+    }
+
+    &:hover{
+      //color: $color-indigo;
     }
   }
 
@@ -779,18 +831,37 @@ $x-small-gutter: 20px;
     font-size: 18px;
     line-height: 24px;
     font-weight: $fw-regular;
-    text-transform: uppercase;
     margin-bottom: 30px - 10px;
 
+    h1 {
+      text-transform: uppercase;
+      line-height: 50px;
+      font-size: 44px;
+      margin-bottom: 10px;
+    }
+  
 
     @include at-small {
       padding-left: 15px;
       padding-right: 15px;
+
+      .stick-bottom {
+        margin-top: 120px;
+      }
+
       div {
         width: 335px;
         max-width: 100%;
         margin: 0 auto;
       }
+
+      h1 {
+      text-transform: uppercase;
+      line-height: 40px;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+  
     }
 
     @include at-medium {
@@ -1324,11 +1395,13 @@ $x-small-gutter: 20px;
   padding: 0;
   margin: 0;
 
+
   @include at-small {
     justify-content: center;
   }
 
   @include at-medium {
+    
     img {
       width: 25px;
       height: 25px;
@@ -1338,6 +1411,7 @@ $x-small-gutter: 20px;
   li {
     flex-shrink: 0;
     flex-grow: 0;
+    //padding-bottom: 10px;
     margin-right: 30px;
 
     @include at-small {
@@ -1871,7 +1945,7 @@ $x-small-gutter: 20px;
 
   &__bottom-nav-token-sale {
     display: inline-block;
-    color: $color-white;
+    //color: $color-white;
     margin: 0 0 20px;
 
     @include at-medium {
@@ -3714,7 +3788,7 @@ label {
   }
 
   &__also-available {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
   }
 
